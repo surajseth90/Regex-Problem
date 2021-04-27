@@ -4,7 +4,7 @@ public class PinCode {
 	
 	public static void validPinCode() {
 		Scanner scanner = new Scanner(System.in);
-		String validPinCodeCondition = "[^A-Za-z$%^&*#@!][0-9]{5}";
+		String validPinCodeCondition = "[^A-Za-z$%^&*#@!][0-9]{4}[^A-Za-z$%^&*#@!]";
 		System.out.println("Please enter your valid Pin code :");
 		String validPinCode = scanner.nextLine();
 		CheckCondition.checkCondition(validPinCode,validPinCodeCondition);
