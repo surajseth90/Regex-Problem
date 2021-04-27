@@ -4,7 +4,7 @@ public class Email {
 
 	public static void validEmail() {
 		Scanner scanner = new Scanner(System.in);
-		String emailCondition = "[a-z]{3}";
+		String emailCondition = "[a-z]{3}[@]";
 		System.out.println("Please enter your valid email ID :");
 		String valid = scanner.nextLine();
 		CheckCondition.checkCondition(valid,emailCondition);
